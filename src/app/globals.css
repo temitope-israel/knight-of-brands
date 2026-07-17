@@ -11,14 +11,12 @@
   --color-stone: #6b6560;
   --color-stone-light: #a39d98;
 
-
   /* Font tokens */
   --font-display: var(--font-fraunces), serif;
   --font-body: var(--font-inter), sans-serif;
-
 }
 
-body{
+body {
   background-color: var(--color-parchment);
   color: var(--color-ink);
 }
