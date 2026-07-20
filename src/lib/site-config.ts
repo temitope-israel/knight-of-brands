@@ -1,0 +1,62 @@
+export const siteConfig = {
+  name: "Knight of Brands",
+  tagline: "We don't just design brands. We build legacies.",
+  footerTagline: "Strategy. Design. Impact.",
+  description:
+    "Knight of Brands is a Nigerian branding and advertising agency helping ambitious businesses build memorable brands through strategy, design, and digital experiences.",
+  url: "https://knightofbrands.com",
+} as const;
+
+export const navLinks = [
+  { label: "Home", href: "/" },
+  { label: "Work", href: "/work" },
+  { label: "Services", href: "/services" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
+] as const;
+
+export const contactConfig = {
+  email: "info@knightofbrands.com",
+  phone: "+2348115973776",
+  address:
+    "4 Babatope Bejide Street, Off Fola Osibo, Lekki Phase 1 Lagos – Nigeria",
+  whatsapp: {
+    number: "23470351623577",
+    defaultMessage: "Hi Knight of Brands, I'd like to talk about a project.",
+  },
+} as const;
+
+export const socialLinks = [
+  { label: "Instagram", href: "https://instagram.com/knightofbrands_" },
+  { label: "Facebook", href: "https://facebook.com/knightofbrands" },
+  { label: "LinkedIn", href: "https://linkedin.com/knightofbrands" },
+  { label: "X", href: "https://instagram.com/knightofbrands" },
+] as const;
+
+export const services = [
+  {
+    number: "01",
+    title: "Branding",
+    description: "Building strong brand identities that connect and inspire.",
+    href: "/services#branding",
+  },
+  {
+    number: "02",
+    title: "Advertising",
+    description: "Creating campaigns that capture attention and drive results.",
+    href: "/services#advertising",
+  },
+  {
+    number: "03",
+    title: "Marketing",
+    description: "Data-driven strategies that grow your brand and reach.",
+    href: "/services#marketing",
+  },
+  {
+    number: "04",
+    title: "Consultancy",
+    description:
+      "Expert guidance to position your brand for long-term success.",
+    href: "/services#consultancy",
+  },
+] as const;
