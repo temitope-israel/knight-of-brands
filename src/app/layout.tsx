@@ -3,6 +3,8 @@ import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import Preloader from "@/components/layout/Preloader";
+import WhatsAppButton from "@/components/layout/WhatsAppButton";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -33,9 +35,12 @@ export default function RootLayout({
       <body
         className={`${fraunces.variable} ${inter.variable} h-full antialiased`}
       >
+        <Preloader />
         <Navbar />
         {children}
         <Footer />
+
+        <WhatsAppButton />
       </body>
     </html>
   );
