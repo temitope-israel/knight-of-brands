@@ -27,7 +27,7 @@ export default function Navbar() {
 
           <Link
             href="/contact"
-            className="border-crimson-bright font-body hover:bg-crimson-bright hidden items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-medium text-white transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:inline-flex"
+            className="border-crimson-bright font-body hover:bg-crimson-bright hidden items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-medium text-white transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white lg:inline-flex"
           >
             Get In Touch
             <span aria-hidden="true">→</span>

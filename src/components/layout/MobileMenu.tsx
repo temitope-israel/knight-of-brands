@@ -13,7 +13,7 @@ export default function MobileMenu() {
   return (
     <>
       {/* Desktop nav links */}
-      <ul className="hidden items-center gap-8 md:flex">
+      <ul className="hidden items-center gap-8 lg:flex">
         {navLinks.map((link) => {
           const isActive = pathname === link.href;
           return (
@@ -52,7 +52,7 @@ export default function MobileMenu() {
         aria-expanded={isOpen}
         aria-controls="mobile-menu"
         aria-label={isOpen ? "Close menu" : "Open menu"}
-        className="focus-visible:outline-parchment relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5 focus-visible:outline-2 focus-visible:outline-offset-4 md:hidden"
+        className="focus-visible:outline-parchment relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5  focus-visible:outline-2 focus-visible:outline-offset-4 lg:hidden"
       >
         <motion.span
           animate={isOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
@@ -80,7 +80,7 @@ export default function MobileMenu() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25, ease: "easeOut" as const }}
-            className="bg-parchment fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 md:hidden"
+            className="bg-parchment fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 lg:hidden"
           >
             {navLinks.map((link, index) => {
               const isActive = pathname === link.href;
