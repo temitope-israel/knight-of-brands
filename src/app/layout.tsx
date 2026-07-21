@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Preloader from "@/components/layout/Preloader";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
+import PageTransition from "@/components/layout/PageTransition";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -32,14 +33,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${fraunces.variable} ${inter.variable} h-full antialiased`}
-      >
+      <body className={`${fraunces.variable} ${inter.variable} antialiased`}>
         <Preloader />
         <Navbar />
-        {children}
+        <PageTransition>{children}</PageTransition>
         <Footer />
-
         <WhatsAppButton />
       </body>
     </html>
