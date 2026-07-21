@@ -60,3 +60,28 @@ export const services = [
     href: "/services#consultancy",
   },
 ] as const;
+
+
+
+export const stats = [
+  {
+    value: "120+",
+    label: "Projects Delivered",
+    description: "Across diverse industries",
+  },
+  {
+    value: "8+",
+    label: "Years of Experience",
+    description: "Solving real business problems",
+  },
+  {
+    value: "8+",
+    label: "Industries Served",
+    description: "From startups to enterprises",
+  },
+  {
+    value: "35+",
+    label: "Brands Transformed",
+    description: "Built for growth and impact",
+  },
+] as const; // TODO: confirm real figures with client before launch
