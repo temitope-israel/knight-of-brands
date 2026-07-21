@@ -85,3 +85,22 @@ export const stats = [
     description: "Built for growth and impact",
   },
 ] as const; // TODO: confirm real figures with client before launch
+
+
+// Placeholder portfolio entries — replace with real client projects before
+// launch. Deliberately generic (not real company names) so it's obvious
+// this is placeholder content, not actual case studies.
+export const workPreview = [
+  {
+    title: "Case Study 01",
+    category: "Branding",
+  },
+  {
+    title: "Case Study 02",
+    category: "Digital Campaign",
+  },
+  {
+    title: "Case Study 03",
+    category: "Web Design",
+  },
+] as const;
