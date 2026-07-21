@@ -58,7 +58,7 @@ export default function Preloader() {
           transition={{ duration: 0.5, ease: "easeInOut" as const }}
           role="status"
           aria-label={`Loading ${siteConfig.name}`}
-          className="bg-crimson fixed inset-0 z-50 flex flex-col items-center justify-center gap-6"
+          className="bg-crimson-bright fixed inset-0 z-50 flex flex-col items-center justify-center gap-6"
         >
           <motion.div
             initial={

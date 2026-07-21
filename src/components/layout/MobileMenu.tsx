@@ -20,13 +20,24 @@ export default function MobileMenu() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`font-body focus-visible:outline-crimson relative text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 ${
-                  isActive ? "text-crimson" : "text-ink hover:text-crimson"
-                }`}
+                className="font-body group relative text-sm font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
               >
                 {link.label}
+
+                {/* Hover indicator — top border, white, only for non-active links */}
+                {!isActive && (
+                  <span
+                    aria-hidden="true"
+                    className="absolute -top-1 left-1/2 h-0.5 w-1/2 -translate-x-1/2 bg-white opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                  />
+                )}
+
+                {/* Active indicator — bottom border, red, permanent */}
                 {isActive && (
-                  <span className="bg-crimson absolute -bottom-1 left-0 h-px w-full" />
+                  <span
+                    aria-hidden="true"
+                    className="bg-crimson-bright absolute -bottom-1 left-1/2 h-0.5 w-1/2 -translate-x-1/2"
+                  />
                 )}
               </Link>
             </li>
@@ -41,22 +52,22 @@ export default function MobileMenu() {
         aria-expanded={isOpen}
         aria-controls="mobile-menu"
         aria-label={isOpen ? "Close menu" : "Open menu"}
-        className="focus-visible:outline-crimson relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5 focus-visible:outline-2 focus-visible:outline-offset-4 md:hidden"
+        className="focus-visible:outline-parchment relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5 focus-visible:outline-2 focus-visible:outline-offset-4 md:hidden"
       >
         <motion.span
           animate={isOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
           transition={{ duration: 0.2, ease: "easeOut" as const }}
-          className="bg-ink h-px w-6"
+          className="h-px w-6 bg-white"
         />
         <motion.span
           animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
           transition={{ duration: 0.2, ease: "easeOut" as const }}
-          className="bg-ink h-px w-6"
+          className="h-px w-6 bg-white"
         />
         <motion.span
           animate={isOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
           transition={{ duration: 0.2, ease: "easeOut" as const }}
-          className="bg-ink h-px w-6"
+          className="h-px w-6 bg-white"
         />
       </button>
 
