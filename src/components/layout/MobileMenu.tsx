@@ -12,7 +12,6 @@ export default function MobileMenu() {
 
   return (
     <>
-      {/* Desktop nav links */}
       <ul className="hidden items-center gap-8 lg:flex">
         {navLinks.map((link) => {
           const isActive = pathname === link.href;
@@ -24,7 +23,6 @@ export default function MobileMenu() {
               >
                 {link.label}
 
-                {/* Hover indicator — top border, white, only for non-active links */}
                 {!isActive && (
                   <span
                     aria-hidden="true"
@@ -32,7 +30,6 @@ export default function MobileMenu() {
                   />
                 )}
 
-                {/* Active indicator — bottom border, red, permanent */}
                 {isActive && (
                   <span
                     aria-hidden="true"
@@ -45,14 +42,13 @@ export default function MobileMenu() {
         })}
       </ul>
 
-      {/* Mobile hamburger toggle */}
       <button
         type="button"
         onClick={() => setIsOpen((prev) => !prev)}
         aria-expanded={isOpen}
         aria-controls="mobile-menu"
         aria-label={isOpen ? "Close menu" : "Open menu"}
-        className="focus-visible:outline-parchment relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5  focus-visible:outline-2 focus-visible:outline-offset-4 lg:hidden"
+        className="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white lg:hidden"
       >
         <motion.span
           animate={isOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
@@ -71,7 +67,6 @@ export default function MobileMenu() {
         />
       </button>
 
-      {/* Mobile menu overlay */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -99,7 +94,7 @@ export default function MobileMenu() {
                     href={link.href}
                     onClick={() => setIsOpen(false)}
                     className={`font-display text-3xl ${
-                      isActive ? "text-crimson" : "text-ink"
+                      isActive ? "text-crimson-bright" : "text-ink"
                     }`}
                   >
                     {link.label}

@@ -37,15 +37,15 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-flex items-center gap-2">
               <Image
-                src="/images/logo.png"
+                src="/images/footer-logo.png"
                 alt={siteConfig.name}
                 width={160}
                 height={48}
-                className="h-10 w-auto"
+                className="h-26 w-auto"
               />
             </Link>
 
-            <p className="font-body text-stone mt-4 max-w-xs text-sm">
+            <p className="font-body text-stone mt-2 max-w-xs text-sm">
               {siteConfig.footerTagline}
             </p>
 

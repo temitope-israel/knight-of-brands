@@ -9,16 +9,16 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
         <Link
           href="/"
-          className="focus-visible:outline-parchment flex items-center gap-2 focus-visible:outline-2 focus-visible:outline-offset-4"
+          className="flex items-center gap-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
         >
           <Image
-            src="/images/logo-final-dark-bg.png"
+            src="/images/nav-logo.png"
             alt={siteConfig.name}
             width={220}
             height={110}
             priority
             unoptimized
-            className="h-16 w-auto md:h-20"
+            className="h-22 w-auto md:h-22"
           />
         </Link>
 

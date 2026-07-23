@@ -14,6 +14,11 @@
   /* Font tokens */
   --font-display: var(--font-fraunces), serif;
   --font-body: var(--font-inter), sans-serif;
+
+  /* Add these two to match the CTA component utilities */
+  --font-serif: var(--font-fraunces), serif;
+  --font-mono:
+    var(--font-jetbrains-mono), monospace; /* or whatever mono font variable you load in Next.js */
 }
 
 body {
