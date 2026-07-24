@@ -80,12 +80,12 @@ export default function Preloader() {
               }}
             >
               <Image
-                src="/images/logo.png"
+                src="/images/preloader-logo.png"
                 alt={siteConfig.name}
                 width={160}
                 height={48}
                 priority
-                className="h-14 w-auto md:h-16"
+                className="h-18 w-auto md:h-22"
               />
             </motion.div>
           </motion.div>
