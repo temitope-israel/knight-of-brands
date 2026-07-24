@@ -18,7 +18,7 @@ export default function Navbar() {
             height={150}
             priority
             unoptimized
-            className="h-18 w-auto md:h-20"
+            className="h-16 w-auto md:h-18"
           />
         </Link>
 
