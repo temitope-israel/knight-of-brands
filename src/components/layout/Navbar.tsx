@@ -12,13 +12,13 @@ export default function Navbar() {
           className="flex items-center gap-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
         >
           <Image
-            src="/images/nav-logoo.png"
+            src="/images/new-nav-logo.png"
             alt={siteConfig.name}
-            width={220}
-            height={110}
+            width={300}
+            height={150}
             priority
             unoptimized
-            className="h-22 w-auto md:h-22"
+            className="h-20 w-auto md:h-20"
           />
         </Link>
 
