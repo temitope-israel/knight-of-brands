@@ -12,7 +12,7 @@ export default function Navbar() {
           className="flex items-center gap-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
         >
           <Image
-            src="/images/nav-logo.png"
+            src="/images/nav-logoo.png"
             alt={siteConfig.name}
             width={220}
             height={110}

@@ -21,7 +21,7 @@ export const contactConfig = {
   address:
     "4 Babatope Bejide Street, Off Fola Osibo, Lekki Phase 1 Lagos – Nigeria",
   whatsapp: {
-    number: "2348162599233",
+    number: "2347035162357",
     defaultMessage: "Hi Knight of Brands, I'd like to talk about a project.",
   },
 } as const;
@@ -29,7 +29,7 @@ export const contactConfig = {
 export const socialLinks = [
   { label: "Instagram", href: "https://instagram.com/knightofbrands_" },
   { label: "Facebook", href: "https://facebook.com/knightofbrands" },
-  { label: "LinkedIn", href: "https://linkedin.com/knightofbrands" },
+  { label: "LinkedIn", href: "https://linkedin.com/knightofbrands_" },
   { label: "X", href: "https://instagram.com/knightofbrands" },
 ] as const;
 
