@@ -38,7 +38,7 @@ function SegmentedFilter({
     <div
       role="tablist"
       aria-label="Work Filter"
-      className="border-stone-light/20 mx-auto  bg-ink/20 inline-flex flex-wrap items-center gap-4 rounded-2xl border p-1.5 backdrop-blur-xl"
+      className="border-stone-light/20 bg-ink/20 mx-auto inline-flex flex-wrap items-center gap-4 rounded-2xl border p-1.5 backdrop-blur-xl"
     >
       {categories.map((category) => {
         const isActive = selectedCategory === category;
@@ -229,7 +229,7 @@ export default function WorkGrid() {
   }, [selectedCategory]);
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-24">
       {/* Segmented Glass Navigation */}
       <div className="flex justify-start">
         <SegmentedFilter
@@ -244,7 +244,7 @@ export default function WorkGrid() {
         layout
         initial={prefersReducedMotion ? false : { opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="grid gap-y-10 sm:grid-cols-2 md:gap-y-20 md:gap-x-6 lg:grid-cols-3"
+        className="grid gap-y-10 sm:grid-cols-2 md:gap-x-6 md:gap-y-20 lg:grid-cols-3"
       >
         <AnimatePresence mode="popLayout">
           {filteredProjects.map((project, idx) => {
