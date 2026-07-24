@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useState, useSyncExternalStore } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { siteConfig } from "@/lib/site-config";
+import { useScrollLock } from "@/lib/useScrollLock";
 
 const STORAGE_KEY = "kob-preloader-shown";
 const TAGLINE_WORDS = siteConfig.footerTagline.split(" ");
@@ -41,12 +42,7 @@ export default function Preloader() {
 
   const shouldShow = !alreadyShown && !dismissed;
 
-  useEffect(() => {
-    document.body.style.overflow = shouldShow ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [shouldShow]);
+  useScrollLock(shouldShow);
 
   return (
     <AnimatePresence>

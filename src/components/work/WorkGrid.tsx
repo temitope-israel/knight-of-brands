@@ -38,7 +38,7 @@ function SegmentedFilter({
     <div
       role="tablist"
       aria-label="Work Filter"
-      className="border-stone-light/20 bg-ink/50 inline-flex flex-wrap items-center gap-1 rounded-2xl border p-1.5 backdrop-blur-xl"
+      className="border-stone-light/20 mx-auto  bg-ink/20 inline-flex flex-wrap items-center gap-4 rounded-2xl border p-1.5 backdrop-blur-xl"
     >
       {categories.map((category) => {
         const isActive = selectedCategory === category;
@@ -134,7 +134,7 @@ function BentoCard({ project, index, isFeatured, onSelect }: BentoCardProps) {
             alt={project.title}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="object-cover opacity-15 transition-all duration-700 group-hover:scale-105 group-hover:opacity-30"
+            className="object-cover opacity-35 transition-all duration-700 group-hover:scale-105 group-hover:opacity-30"
           />
           <div className="from-ink via-ink/80 absolute inset-0 bg-gradient-to-t to-transparent" />
         </div>
@@ -147,11 +147,11 @@ function BentoCard({ project, index, isFeatured, onSelect }: BentoCardProps) {
         {/* Header Badges */}
         <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <span className="bg-stone-light/15 text-ember border-parchment/10 font-body rounded-lg border px-3 py-1 text-[10px] font-bold tracking-widest uppercase backdrop-blur-md">
+            <span className="bg-stone-light/10 text-stone-light border-parchment/10 font-body rounded-lg border px-3 py-1 text-[10px] font-extrabold tracking-widest uppercase backdrop-blur-md">
               {project.category}
             </span>
             {isFeatured && (
-              <span className="bg-crimson-bright/20 text-crimson-bright border-crimson-bright/30 font-body rounded-lg border px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase backdrop-blur-md">
+              <span className="bg-crimson-bright/20 text-crimson-bright border-crimson-light/70 font-body rounded-lg border px-2.5 py-1 text-[10px] font-bold tracking-widest uppercase backdrop-blur-md">
                 Featured
               </span>
             )}

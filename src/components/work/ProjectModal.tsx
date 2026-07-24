@@ -5,6 +5,8 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { TbX, TbCheck } from "react-icons/tb";
 import { workProjects } from "@/lib/site-config";
+import { useScrollLock } from "@/lib/useScrollLock";
+import { usePathname } from "next/navigation";
 
 type Project = (typeof workProjects)[number];
 
@@ -42,12 +44,15 @@ type ProjectModalProps = {
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   const closeButtonRef = useRef<HTMLButtonElement | null>(null);
 
-  useEffect(() => {
-    document.body.style.overflow = project ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [project]);
+
+
+  useScrollLock(Boolean(project));
+  // useEffect(() => {
+  //   document.body.style.overflow = project ? "hidden" : "";
+  //   return () => {
+  //     document.body.style.overflow = "";
+  //   };
+  // }, [project]);
 
   useEffect(() => {
     if (!project) return;
@@ -59,6 +64,14 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [project, onClose]);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    onClose();
+    // Intentionally only reacting to pathname changes — onClose is stable
+    // enough here and including it would refire this on every parent render.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname]);
 
   return (
     <AnimatePresence>
