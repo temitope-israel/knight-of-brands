@@ -244,7 +244,7 @@ export default function WorkGrid() {
         layout
         initial={prefersReducedMotion ? false : { opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+        className="grid gap-y-10 sm:grid-cols-2 md:gap-y-20 md:gap-x-6 lg:grid-cols-3"
       >
         <AnimatePresence mode="popLayout">
           {filteredProjects.map((project, idx) => {

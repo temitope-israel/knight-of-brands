@@ -52,6 +52,37 @@ export default function MobileMenu() {
       >
         <motion.span
           animate={isOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
+          transition={{ duration: 0.2, ease: "easeOut" }}
+          className={`h-0.5 w-6 transition-colors duration-200 ${
+            isOpen ? "bg-crimson-bright" : "bg-white"
+          }`}
+        />
+        <motion.span
+          animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
+          transition={{ duration: 0.2, ease: "easeOut" }}
+          className={`h-0.5 w-6 transition-colors duration-200 ${
+            isOpen ? "bg-crimson-bright" : "bg-white"
+          }`}
+        />
+        <motion.span
+          animate={isOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
+          transition={{ duration: 0.2, ease: "easeOut" }}
+          className={`h-0.5 w-6 transition-colors duration-200 ${
+            isOpen ? "bg-crimson-bright" : "bg-white"
+          }`}
+        />
+      </button>
+
+      {/* <button
+        type="button"
+        onClick={() => setIsOpen((prev) => !prev)}
+        aria-expanded={isOpen}
+        aria-controls="mobile-menu"
+        aria-label={isOpen ? "Close menu" : "Open menu"}
+        className="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white lg:hidden"
+      >
+        <motion.span
+          animate={isOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
           transition={{ duration: 0.2, ease: "easeOut" as const }}
           className="h-px w-6 bg-white"
         />
@@ -65,7 +96,7 @@ export default function MobileMenu() {
           transition={{ duration: 0.2, ease: "easeOut" as const }}
           className="h-px w-6 bg-white"
         />
-      </button>
+      </button> */}
 
       <AnimatePresence>
         {isOpen && (
