@@ -37,7 +37,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-flex items-center gap-2">
               <Image
-                src="/images/footer-logo.png"
+                src="/images/KOB-White.png"
                 alt={siteConfig.name}
                 width={160}
                 height={48}

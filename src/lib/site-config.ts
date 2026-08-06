@@ -9,9 +9,9 @@ export const siteConfig = {
 
 export const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Work", href: "/work" },
-  { label: "Services", href: "/services" },
   { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Work", href: "/work" },
   { label: "Contact", href: "/contact" },
 ] as const;
 
@@ -73,12 +73,12 @@ export const stats = [
     description: "Solving real business problems",
   },
   {
-    value: "8+",
+    value: "13+",
     label: "Industries Served",
     description: "From startups to enterprises",
   },
   {
-    value: "35+",
+    value: "53+",
     label: "Brands Transformed",
     description: "Built for growth and impact",
   },

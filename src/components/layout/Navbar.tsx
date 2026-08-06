@@ -6,19 +6,19 @@ import { siteConfig } from "@/lib/site-config";
 export default function Navbar() {
   return (
     <header className="bg-crimson-dark shadow-ink/30 fixed top-0 left-0 z-30 w-full shadow-lg">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-0.5 md:px-10">
         <Link
           href="/"
           className="flex items-center gap-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
         >
           <Image
-            src="/images/new-nav-logo.png"
+            src="/images/Footer.png"
             alt={siteConfig.name}
             width={300}
             height={150}
             priority
             unoptimized
-            className="h-20 w-auto md:h-22"
+            className="h-18 w-auto md:h-22"
           />
         </Link>
 
