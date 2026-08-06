@@ -41,7 +41,7 @@ export default function Footer() {
                 alt={siteConfig.name}
                 width={160}
                 height={48}
-                className="h-26 w-auto"
+                className="h-20 w-auto"
               />
             </Link>
 
