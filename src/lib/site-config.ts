@@ -102,55 +102,118 @@ export const workPreview = [
   },
 ] as const;
 
-// Placeholder portfolio entries — replace with real client projects before
-// launch. Deliberately generic (not real company names) so it's obvious
-// this is placeholder content, not actual case studies.
-// export const workProjects = [
-//   {
-//     slug: "case-study-01",
-//     title: "Case Study 01",
-//     category: "Branding",
-//     summary:
-//       "A full brand identity system built from the ground up — logo, color, typography, and voice.",
-//   },
-//   {
-//     slug: "case-study-02",
-//     title: "Case Study 02",
-//     category: "Digital Campaign",
-//     summary:
-//       "A multi-channel campaign designed to grow awareness and drive measurable engagement.",
-//   },
-//   {
-//     slug: "case-study-03",
-//     title: "Case Study 03",
-//     category: "Web Design",
-//     summary:
-//       "A modern, conversion-focused website built for clarity, speed, and brand consistency.",
-//   },
-//   {
-//     slug: "case-study-04",
-//     title: "Case Study 04",
-//     category: "Brand Strategy",
-//     summary:
-//       "Positioning and messaging strategy that gave a growing business a clear market voice.",
-//   },
-//   {
-//     slug: "case-study-05",
-//     title: "Case Study 05",
-//     category: "Social Media",
-//     summary:
-//       "An ongoing content and community strategy built to grow an engaged, loyal audience.",
-//   },
-//   {
-//     slug: "case-study-06",
-//     title: "Case Study 06",
-//     category: "Consultancy",
-//     summary:
-//       "Strategic guidance that helped a business reposition and scale with confidence.",
-//   },
-// ] as const;
+
 
 export const workProjects = [
+{
+  slug: "vmedex-digital",
+  title: "VmEdex Digital",
+  image: "/images/work/vmedex.png",
+  category: "Website Design & Development",
+  brief:
+    "Design and develop a visual-first digital platform to highlight high-end cinematography, event coverage, and creative content creation.",
+  about:
+    "VmEdex Digital is a premium visual media agency specializing in cinematic video production, high-impact photography, event coverage, and digital content creation for brands and creators.",
+  activities: [
+    "Web Design & Development",
+    "Showreel & Video Integration",
+    "Dynamic Media Gallery",
+    "Mobile Responsive Layout",
+    "Event Booking & Inquiry Forms",
+    "SEO & Media Optimization",
+  ],
+  date: "Completed",
+  summary:
+    "A visually immersive, media-focused platform built to showcase cinematic storytelling and high-profile event coverage.",
+},
+{
+  slug: "knightforth-logistics",
+  title: "KnightForth Logistics",
+  image: "/images/work/knightforth-logistics.png",
+  category: "Website Design & Development",
+  brief:
+    "Build a robust, modern web platform to showcase nationwide supply chain capabilities, cargo tracking, and freight services across Nigeria.",
+  about:
+    "KnightForth Logistics is a premier logistics and freight management company registered in Nigeria, providing reliable haulage, air and sea freight forwarding, warehousing, and nationwide delivery solutions.",
+  activities: [
+    "Web Design & Development",
+    "Shipment Tracking System",
+    "Instant Quote Request Form",
+    "Interactive Fleet & Routes Showcase",
+    "Content Management System",
+    "Mobile Responsive Development",
+    "Local & Regional SEO",
+  ],
+  date: "Completed",
+  summary:
+    "A high-performance freight management platform featuring custom shipment tracking and instant rate request workflows for nationwide transport.",
+},
+  {
+  slug: "glochstylistic",
+  title: "GlochStylistic Limited",
+  image: "/images/work/glochstylistic.png",
+  category: "Website Design & Development",
+  brief:
+    "Design and develop a modern digital platform to showcase sustainable housing developments, property listings, and investment opportunities across Lagos and Abuja.",
+  about:
+    "Gloch Stylistic Limited builds beautiful, secure, and affordable smart homes across Lagos and Abuja, delivering high-yield real estate investments and durable, energy-efficient residential developments.",
+  activities: [
+    "Web Design & Development",
+    "Property Showcase & Gallery",
+    "Interactive Floor Plan Displays",
+    "Investment Inquiry Workflows",
+    "Content Management System",
+    "Mobile Responsive Development",
+    "Search Engine Optimization",
+  ],
+  date: "Completed",
+  summary:
+    "A premium real estate platform engineered to showcase smart home developments and drive high-yield property investment inquiries across Lagos and Abuja.",
+},
+{
+  slug: "temple-body",
+  title: "Temple Body",
+  image: "/images/work/temple-body.png",
+  category: "Website Design & Development",
+  brief:
+    "Design and build an elegant, high-converting digital storefront to showcase premium shapewear, body transformation products, and wellness solutions.",
+  about:
+    "Temple Body is a wellness and self-care brand specializing in high-performance body shapers, beauty products, and result-driven body transformation solutions designed to enhance confidence.",
+  activities: [
+    "Web Design & Development",
+    "E-Commerce Catalog Integration",
+    "Product Showcase & Filtering",
+    "Secure Checkout & Payment Setup",
+    "Content Management System",
+    "Mobile Responsive Development",
+    "Conversion Rate & Search Optimization",
+  ],
+  date: "Completed — September 2026",
+  summary:
+    "A sleek, conversion-focused e-commerce storefront crafted to present high-performance shapewear and elevate the customer shopping experience.",
+},
+ {
+  slug: "hairbybeeroots",
+  title: "HairByBeeRoots",
+  image: "/images/work/hairbybeesroots.png",
+  category: "Website Design & Development",
+  brief:
+    "Develop an elegant, high-converting e-commerce platform to showcase luxury hair extensions, custom wig collections, and bespoke ordering options.",
+  about:
+    "Established in 2010, Bees Roots provides premium, 100% pure virgin hair extensions, bundles, and custom wigs sourced globally, featuring lifelong durability across diverse textures and custom colors.",
+  activities: [
+    "Web Design & Development",
+    "E-Commerce Catalog & Filtering",
+    "Custom Wig Request Workflow",
+    "Product Gallery & Texture Guides",
+    "Secure Payment Gateway Setup",
+    "Mobile Responsive Layout",
+    "Search Engine Optimization",
+  ],
+  date: "Completed — September 2026",
+  summary:
+    "An elegant e-commerce experience designed to showcase premium virgin hair collections and streamline custom wig ordering.",
+},
   {
     slug: "swampsea",
     title: "Swampsea",
